@@ -1,0 +1,290 @@
+{
+    "apiVersion": "3.25.0-83",
+    "guiControllers": [
+        {
+            "id": "node_beginning_2430df",
+            "type": "DECISION",
+            "config": {
+                "showInNodes": [
+                    "node_beginning_2430df"
+                ],
+                "hideInNodesEnd": [
+                    "node_beginning_2430df"
+                ],
+                "userSelectionDisappearDelay": 2.5,
+                "autoSelectionDisappearDelay": 3.5
+            }
+        },
+        {
+            "id": "node_hat_ad9e9b",
+            "type": "DECISION",
+            "config": {
+                "showInNodes": [
+                    "node_hat_ad9e9b"
+                ],
+                "hideInNodesEnd": [
+                    "node_hat_ad9e9b"
+                ],
+                "userSelectionDisappearDelay": 2.5,
+                "autoSelectionDisappearDelay": 3.5
+            }
+        },
+        {
+            "id": "node_scar_099403",
+            "type": "DECISION",
+            "config": {
+                "showInNodes": [
+                    "node_scar_099403"
+                ],
+                "hideInNodesEnd": [
+                    "node_scar_099403"
+                ],
+                "userSelectionDisappearDelay": 2.5,
+                "autoSelectionDisappearDelay": 3.5
+            }
+        },
+        {
+            "id": "node_pin_eb5bbb",
+            "type": "DECISION",
+            "config": {
+                "showInNodes": [
+                    "node_pin_eb5bbb"
+                ],
+                "hideInNodesEnd": [
+                    "node_pin_eb5bbb"
+                ],
+                "userSelectionDisappearDelay": 2.5,
+                "autoSelectionDisappearDelay": 3.5
+            }
+        }
+    ],
+    "gui": [
+        {
+            "id": "d2b76320-08fe-11e9-af25-13bebeecc463",
+            "component": "EkoGroup",
+            "props": {
+                "config": {
+                    "parentElement": "root",
+                    "enableTransition": true,
+                    "stateSourceId": "node_beginning_2430df",
+                    "fitToVideo": true,
+                    "transitionInDuration": 0.60000002384186,
+                    "transitionOutDuration": 0.60000002384186,
+                    "children": [
+                        "timer_beginning_851a3e",
+                        "button_beginning_e3bdbd",
+                        "button_beginning_34a305",
+                        "button_beginning_6c2e1e"
+                    ]
+                }
+            }
+        },
+        {
+            "id": "timer_beginning_851a3e",
+            "props": {
+                "config": {
+                    "stateSourceId": "node_beginning_2430df",
+                    "parentElement": null,
+                    "enableTransition": false,
+                    "text": "Timer1",
+                    "style": {
+                        "top": 53,
+                        "left": 747,
+                        "width": "60px",
+                        "height": "60px",
+                        "visibility": "hidden",
+                        "opacity": 1,
+                        "transform": "rotate(0deg)",
+                        "transformOrigin": "0 0",
+                        "--font": "Nixie One",
+                        "--color": "#F3F4F4"
+                    },
+                    "handlers": [
+
+                    ]
+                }
+            },
+            "component": "LegacyPureTimer"
+        },
+        {
+            "id": "button_beginning_e3bdbd",
+            "props": {
+                "config": {
+                    "stateSourceId": "node_beginning_2430df",
+                    "parentElement": null,
+                    "enableTransition": false,
+                    "text": "Hat",
+                    "style": {
+                        "top": 173,
+                        "left": 73,
+                        "width": "170px",
+                        "height": "46px",
+                        "visibility": "visible",
+                        "opacity": 1,
+                        "transform": "rotate(0deg)",
+                        "transformOrigin": "0 0",
+                        "--color": "#61C9DB",
+                        "--font": "Dosis",
+                        "--font-size": "26px",
+                        "--text-color": "#ffffff",
+                        "--line-height": "26px",
+                        "--letter-spacing": "1",
+                        "--text-align": "center",
+                        "--text-box-align": "center",
+                        "--text-box-vertical-align": "center",
+                        "--word-wrap": "nowrap"
+                    },
+                    "handlers": [
+                        {
+                            "type": "DECISION_SELECT",
+                            "decisionId": "node_beginning_2430df",
+                            "targetNode": "node_hat_ad9e9b",
+                            "connectOn": "NODE_END"
+                        },
+                        {
+                            "type": "PLAY_SOUND",
+                            "audioId": "audio_ding_sound_82f202"
+                        },
+                        {
+                            "type": "REPORT_INTERACTION",
+                            "id": "button_beginning_e3bdbd",
+                            "data": {
+
+                            },
+                            "options": {
+                                "trackAnalytics": true,
+                                "analyticsData": {
+                                    "interactionElementName": "button_beginning_e3bdbd",
+                                    "interactionTriggerType": "click",
+                                    "interactionActionType": "decision",
+                                    "interactionSelectedNodeId": "node_hat_ad9e9b"
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            "component": "LegacyDefaultButton"
+        },
+        {
+            "id": "button_beginning_34a305",
+            "props": {
+                "config": {
+                    "stateSourceId": "node_beginning_2430df",
+                    "parentElement": null,
+                    "enableTransition": false,
+                    "text": "Scar",
+                    "style": {
+                        "top": 238,
+                        "left": 72,
+                        "width": "171px",
+                        "height": "46px",
+                        "visibility": "visible",
+                        "opacity": 1,
+                        "transform": "rotate(0deg)",
+                        "transformOrigin": "0 0",
+                        "--color": "#61C9DB",
+                        "--font": "Roboto Slab",
+                        "--font-size": "26px",
+                        "--text-color": "#ffffff",
+                        "--line-height": "26px",
+                        "--letter-spacing": "1",
+                        "--text-align": "center",
+                        "--text-box-align": "center",
+                        "--text-box-vertical-align": "center",
+                        "--word-wrap": "nowrap"
+                    },
+                    "handlers": [
+                        {
+                            "type": "DECISION_SELECT",
+                            "decisionId": "node_beginning_2430df",
+                            "targetNode": "node_scar_099403",
+                            "connectOn": "NODE_END"
+                        },
+                        {
+                            "type": "PLAY_SOUND",
+                            "audioId": "audio_ding_sound_82f202"
+                        },
+                        {
+                            "type": "REPORT_INTERACTION",
+                            "id": "button_beginning_34a305",
+                            "data": {
+
+                            },
+                            "options": {
+                                "trackAnalytics": true,
+                                "analyticsData": {
+                                    "interactionElementName": "button_beginning_34a305",
+                                    "interactionTriggerType": "click",
+                                    "interactionActionType": "decision",
+                                    "interactionSelectedNodeId": "node_scar_099403"
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            "component": "LegacyDefaultButton"
+        },
+        {
+            "id": "button_beginning_6c2e1e",
+            "props": {
+                "config": {
+                    "stateSourceId": "node_beginning_2430df",
+                    "parentElement": null,
+                    "enableTransition": false,
+                    "text": "Pin",
+                    "style": {
+                        "top": 303,
+                        "left": 73,
+                        "width": "170px",
+                        "height": "46px",
+                        "visibility": "visible",
+                        "opacity": 1,
+                        "transform": "rotate(0deg)",
+                        "transformOrigin": "0 0",
+                        "--color": "#61C9DB",
+                        "--font": "Dosis",
+                        "--font-size": "26px",
+                        "--text-color": "#ffffff",
+                        "--line-height": "26px",
+                        "--letter-spacing": "1",
+                        "--text-align": "center",
+                        "--text-box-align": "center",
+                        "--text-box-vertical-align": "center",
+                        "--word-wrap": "nowrap"
+                    },
+                    "handlers": [
+                        {
+                            "type": "DECISION_SELECT",
+                            "decisionId": "node_beginning_2430df",
+                            "targetNode": "node_pin_eb5bbb",
+                            "connectOn": "NODE_END"
+                        },
+                        {
+                            "type": "PLAY_SOUND",
+                            "audioId": "audio_ding_sound_82f202"
+                        },
+                        {
+                            "type": "REPORT_INTERACTION",
+                            "id": "button_beginning_6c2e1e",
+                            "data": {
+
+                            },
+                            "options": {
+                                "trackAnalytics": true,
+                                "analyticsData": {
+                                    "interactionElementName": "button_beginning_6c2e1e",
+                                    "interactionTriggerType": "click",
+                                    "interactionActionType": "decision",
+                                    "interactionSelectedNodeId": "node_pin_eb5bbb"
+                                }
+                            }
+                        }
+                    ]
+                }
+            },
+            "component": "LegacyDefaultButton"
+        }
+    ]
+}
