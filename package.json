@@ -1,14 +1,18 @@
 {
-    "name": "ce5fc8d0-08fe-11e9-af25-13bebeecc463",
+    "name": "EXAMPLE NAME",
     "version": "1.0.0",
-    "description": "This is an Eko project. To learn how to interact with the code in the `src/` folder, see the [Eko Developer Documentation](https://developer.helloeko.com).",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
+    "description": "EXAMPLE DESCRIPTION. PLEASE CHANGE THIS.",
     "keywords": [],
     "author": "",
     "license": "ISC",
     "eko": {
         "id": "ce5fc8d0-08fe-11e9-af25-13bebeecc463"
+    },
+    "main": "./src/js/app.js",
+    "scripts": {
+        "start": "./node_modules/.bin/eko studio test -p 8080"
+    },
+    "devDependencies": {
+        "eko-cli": "*"
     }
 }
