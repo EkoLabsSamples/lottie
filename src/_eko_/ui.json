@@ -1,5 +1,5 @@
 {
-    "apiVersion": "3.25.0-83",
+    "apiVersion": "3.29.2-95",
     "guiControllers": [
         {
             "id": "node_beginning_2430df",
@@ -16,14 +16,14 @@
             }
         },
         {
-            "id": "node_hat_ad9e9b",
+            "id": "node_pin_eb5bbb",
             "type": "DECISION",
             "config": {
                 "showInNodes": [
-                    "node_hat_ad9e9b"
+                    "node_pin_eb5bbb"
                 ],
                 "hideInNodesEnd": [
-                    "node_hat_ad9e9b"
+                    "node_pin_eb5bbb"
                 ],
                 "userSelectionDisappearDelay": 2.5,
                 "autoSelectionDisappearDelay": 3.5
@@ -44,14 +44,14 @@
             }
         },
         {
-            "id": "node_pin_eb5bbb",
+            "id": "node_hat_ad9e9b",
             "type": "DECISION",
             "config": {
                 "showInNodes": [
-                    "node_pin_eb5bbb"
+                    "node_hat_ad9e9b"
                 ],
                 "hideInNodesEnd": [
-                    "node_pin_eb5bbb"
+                    "node_hat_ad9e9b"
                 ],
                 "userSelectionDisappearDelay": 2.5,
                 "autoSelectionDisappearDelay": 3.5
@@ -60,7 +60,7 @@
     ],
     "gui": [
         {
-            "id": "d2b76320-08fe-11e9-af25-13bebeecc463",
+            "id": "5ccaab9a-c1a4-4d1c-9249-314df36892c6",
             "component": "EkoGroup",
             "props": {
                 "config": {
@@ -88,11 +88,11 @@
                     "enableTransition": false,
                     "text": "Timer1",
                     "style": {
-                        "top": 53,
-                        "left": 747,
+                        "top": 65,
+                        "left": 124,
                         "width": "60px",
                         "height": "60px",
-                        "visibility": "hidden",
+                        "visibility": "visible",
                         "opacity": 1,
                         "transform": "rotate(0deg)",
                         "transformOrigin": "0 0",
@@ -155,9 +155,11 @@
                                 "trackAnalytics": true,
                                 "analyticsData": {
                                     "interactionElementName": "button_beginning_e3bdbd",
+                                    "interactionElementText": "Hat",
                                     "interactionTriggerType": "click",
                                     "interactionActionType": "decision",
-                                    "interactionSelectedNodeId": "node_hat_ad9e9b"
+                                    "interactionSelectedNodeId": "node_hat_ad9e9b",
+                                    "interactionConnectOn": "NODE_END"
                                 }
                             }
                         }
@@ -215,9 +217,11 @@
                                 "trackAnalytics": true,
                                 "analyticsData": {
                                     "interactionElementName": "button_beginning_34a305",
+                                    "interactionElementText": "Scar",
                                     "interactionTriggerType": "click",
                                     "interactionActionType": "decision",
-                                    "interactionSelectedNodeId": "node_scar_099403"
+                                    "interactionSelectedNodeId": "node_scar_099403",
+                                    "interactionConnectOn": "NODE_END"
                                 }
                             }
                         }
@@ -258,8 +262,8 @@
                         {
                             "type": "DECISION_SELECT",
                             "decisionId": "node_beginning_2430df",
-                            "targetNode": "node_pin_eb5bbb",
-                            "connectOn": "NODE_END"
+                            "connectOn": "NODE_END",
+                            "targetNode": "node_pin_eb5bbb"
                         },
                         {
                             "type": "PLAY_SOUND",
@@ -275,8 +279,10 @@
                                 "trackAnalytics": true,
                                 "analyticsData": {
                                     "interactionElementName": "button_beginning_6c2e1e",
+                                    "interactionElementText": "Pin",
                                     "interactionTriggerType": "click",
                                     "interactionActionType": "decision",
+                                    "interactionConnectOn": "NODE_END",
                                     "interactionSelectedNodeId": "node_pin_eb5bbb"
                                 }
                             }

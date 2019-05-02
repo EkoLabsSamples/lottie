@@ -4,7 +4,7 @@ export default {
     source: ivds.vid_video_hat_7abef8,
     data: {
                     insights: {
-                uid: 'd2b62aa0-08fe-11e9-af25-13bebeecc463'
+                uid: '5ccaab9a-c500-45fb-9571-314df36892c6'
                             },
                             decision: {
                 startTime: 15.483,
