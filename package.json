@@ -1,1 +1,21 @@
-{"name":"EXAMPLE NAME","version":"1.0.0","description":"EXAMPLE DESCRIPTION. PLEASE CHANGE THIS.","keywords":[],"author":"","license":"ISC","eko":{"id":"1c1cf150-6cb5-11e9-88b7-8976334bfdbf"},"main":".\/src\/js\/app.js","scripts":{"start":".\/node_modules\/.bin\/eko studio test -p 8080"},"devDependencies":{"eko-cli":"*"}}
+{
+  "name": "LottieComponents_Example",
+  "version": "1.0.0",
+  "description": "Using EkoLottieDecisionButton and EkoLottieTimer",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "eko": {
+    "id": "1c1cf150-6cb5-11e9-88b7-8976334bfdbf"
+  },
+  "main": "./src/js/app.js",
+  "scripts": {
+    "start": "./node_modules/.bin/eko studio test -p 8080"
+  },
+  "devDependencies": {
+    "eko-cli": "*"
+  },
+  "dependencies": {
+    "lottie-web": "^5.5.2"
+  }
+}
