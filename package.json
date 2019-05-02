@@ -1,18 +1,1 @@
-{
-    "name": "EXAMPLE NAME",
-    "version": "1.0.0",
-    "description": "EXAMPLE DESCRIPTION. PLEASE CHANGE THIS.",
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "eko": {
-        "id": "ce5fc8d0-08fe-11e9-af25-13bebeecc463"
-    },
-    "main": "./src/js/app.js",
-    "scripts": {
-        "start": "./node_modules/.bin/eko studio test -p 8080"
-    },
-    "devDependencies": {
-        "eko-cli": "*"
-    }
-}
+{"name":"EXAMPLE NAME","version":"1.0.0","description":"EXAMPLE DESCRIPTION. PLEASE CHANGE THIS.","keywords":[],"author":"","license":"ISC","eko":{"id":"1c1cf150-6cb5-11e9-88b7-8976334bfdbf"},"main":".\/src\/js\/app.js","scripts":{"start":".\/node_modules\/.bin\/eko studio test -p 8080"},"devDependencies":{"eko-cli":"*"}}
