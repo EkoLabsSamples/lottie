@@ -7,9 +7,9 @@ export default {
                 uid: '5ccaab99-e490-4fb5-8aab-314df36892c6'
                             },
                             decision: {
-                startTime: 14.493,
+                startTime: 2.933,
                  
-                    endTime: 17.909,
+                    endTime: 12.739,
                                 children: [
                                     'node_scar_099403'
                      ,                                     'node_hat_ad9e9b'
