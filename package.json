@@ -13,7 +13,7 @@
     "start": "./node_modules/.bin/eko studio test -p 8080"
   },
   "devDependencies": {
-    "eko-cli": "2.6.1"
+    "eko-cli": "*"
   },
   "dependencies": {
     "lottie-web": "^5.5.2"
